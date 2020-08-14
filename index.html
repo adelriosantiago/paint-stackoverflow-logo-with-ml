@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+  </head>
+  <body>
+    <div>
+      <p class="text-center"><small>Original:</small></p>
+      <div class="thumbnail">
+        <img id="input" src="./so.bmp" />
+      </div>
+      <button onclick="train()">train and paint</button>
+      <p class="text-center"><small>Painted by neural network:</small></p>
+      <div class="thumbnail">
+        <canvas id="output" width="300" height="300"></canvas>
+      </div>
+    </div>
+
+    <script>
+      const outputCtx = document.getElementById("output").getContext("2d");
+      let perceptron = new Architect.Perceptron(2, 15, 3);
+      let iteration;
+
+      let inputData = (() => {
+        const tempCtx = document.createElement("canvas").getContext("2d");
+        tempCtx.drawImage(document.getElementById("input"), 0, 0);
+        return tempCtx.getImageData(0, 0, 300, 300).data;
+      })();
+
+      console.log(">>>", inputData);
+
+      const train = () => {
+        iteration = 0;
+      };
+    </script>
+  </body>
+</html>
