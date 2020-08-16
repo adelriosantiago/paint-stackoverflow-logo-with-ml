@@ -18,29 +18,61 @@
     </div>
 
     <script>
+      const width = 300
+      const height = 300
       const outputCtx = document.getElementById("output").getContext("2d")
       let perceptron = new synaptic.Architect.Perceptron(2, 15, 3)
-      let iteration
+      let iteration = 0
 
       let inputData = (() => {
         const tempCtx = document.createElement("canvas").getContext("2d")
         tempCtx.drawImage(document.getElementById("input"), 0, 0)
-        return tempCtx.getImageData(0, 0, 300, 300).data
+        return tempCtx.getImageData(0, 0, 300, 300)
       })()
 
       console.log(">>>", inputData)
 
-      const preview = () => {
+      const getRGB = (img, x, y) => {
+        return [
+          img.data[(height * y + x) * 4], // R
+          img.data[(height * y + x) * 4 + 1], // G
+          img.data[(height * y + x) * 4 + 2], // B
+        ]
+      }
+
+      const paint = () => {
+        var imageData = outputCtx.getImageData(0, 0, width, height)
+        for (let x = 0; x < width; x++) {
+          for (let y = 0; y < height; y++) {
+            var rgb = perceptron.activate([x / width, y / height])
+            //console.log("rgb", rgb)
+            imageData.data[(height * y + x) * 4] = rgb[0] * 225
+            imageData.data[(height * y + x) * 4 + 1] = rgb[1] * 255
+            imageData.data[(height * y + x) * 4 + 2] = rgb[2] * 255
+            imageData.data[(height * y + x) * 4 + 3] = 255
+          }
+        }
+        console.log("ppp", perceptron)
+        outputCtx.putImageData(imageData, 0, 0)
+
+        //setTimeout(train, 10)
+      }
+
+      const train = () => {
         iteration++
+        console.log("training iteration", iteration)
+
+        for (let x = 0; x < width; x += 1) {
+          for (let y = 0; y < height; y += 1) {
+            let learningRate = 0.01 / (1 + 0.0005 * iteration) // Attempt with dynamic learning rate
+            perceptron.activate([x / width, y / height])
+            perceptron.propagate(learningRate, getRGB(inputData, x, y))
+          }
+        }
+        paint()
       }
 
-      const train = () => {
-        //
-      }
-
-      const train = () => {
-        iteration = 0
-      }
+      train()
     </script>
   </body>
 </html>
