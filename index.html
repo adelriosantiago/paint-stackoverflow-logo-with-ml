@@ -18,21 +18,29 @@
     </div>
 
     <script>
-      const outputCtx = document.getElementById("output").getContext("2d");
-      let perceptron = new Architect.Perceptron(2, 15, 3);
-      let iteration;
+      const outputCtx = document.getElementById("output").getContext("2d")
+      let perceptron = new synaptic.Architect.Perceptron(2, 15, 3)
+      let iteration
 
       let inputData = (() => {
-        const tempCtx = document.createElement("canvas").getContext("2d");
-        tempCtx.drawImage(document.getElementById("input"), 0, 0);
-        return tempCtx.getImageData(0, 0, 300, 300).data;
-      })();
+        const tempCtx = document.createElement("canvas").getContext("2d")
+        tempCtx.drawImage(document.getElementById("input"), 0, 0)
+        return tempCtx.getImageData(0, 0, 300, 300).data
+      })()
 
-      console.log(">>>", inputData);
+      console.log(">>>", inputData)
+
+      const preview = () => {
+        iteration++
+      }
 
       const train = () => {
-        iteration = 0;
-      };
+        //
+      }
+
+      const train = () => {
+        iteration = 0
+      }
     </script>
   </body>
 </html>

@@ -5,3 +5,9 @@ To run in localhost:
 - Open index.html
 
 Insipired in: http://caza.la/synaptic/#/paint-an-image
+
+StackOverflow question:
+
+-
+
+### Can a feedforward neural network achieve this result? If not, why? If yes, how?\*\*
