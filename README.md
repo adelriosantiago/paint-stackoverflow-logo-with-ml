@@ -36,7 +36,7 @@ However StackOverflow's logo is far more complex and even after several thousand
 
 The best results I have obtained so far are:
 
-
+[result grid]
 
 I awarding a small bounty amount of hard-earned reputation on whoever can answer:
 
