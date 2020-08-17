@@ -24,7 +24,9 @@ And I want it to learn how to draw StackOverflow's logo:
 
 For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
-The problem is
+I am placing some amount of hard-earned bounty on whoever can improve this FFNN drawing accuracy.
+
+
 
 
  - Librarie used: [Synaptic.js](https://caza.la/synaptic/)
