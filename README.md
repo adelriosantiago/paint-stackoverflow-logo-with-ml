@@ -24,9 +24,11 @@ And I want it to learn how to draw StackOverflow's logo:
 
 For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
+The problem is
 
 
+ - Librarie used: [Synaptic.js](https://caza.la/synaptic/)
+ - This example in localhost [in this repo](https://github.com/adelriosantiago/paint-stackoverflow-logo-with-ml).
 
-I am using a [Feedforward Neural Network](https://en.wikipedia.org/wiki/Feedforward_neural_network) architecture from [Synaptic.js](https://caza.la/synaptic/) to draw StackOverflow's logo entirely from NN's activation.
 
 ### Can a feedforward neural network achieve this result? If not, why? If yes, how?\*\*
