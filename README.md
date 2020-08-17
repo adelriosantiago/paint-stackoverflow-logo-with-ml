@@ -30,7 +30,7 @@ The FFNN works pretty well for simple shapes like a circle or a box.
 
 And the result after several thousands epochs looks pretty well:
 
-[image]
+[circle image]
 
 However StackOverflow's logo is far more complex and even after several thousands of iterations the FFNN's results are poor:
 
