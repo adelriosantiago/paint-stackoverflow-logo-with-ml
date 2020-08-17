@@ -10,11 +10,14 @@ StackOverflow question: [link]
 
 ---
 
-# How can improve a Feedforward Neural Network results?
+# How to Feedforward Neural Network drawing accuracy?
 
 I have this simple Feedforward Neural Network architecture:
 
 ![](./architecture.jpg)
+
+
+
 
 I am using a [Feedforward Neural Network](https://en.wikipedia.org/wiki/Feedforward_neural_network) architecture from [Synaptic.js](https://caza.la/synaptic/) to draw StackOverflow's logo entirely from NN's activation.
 
