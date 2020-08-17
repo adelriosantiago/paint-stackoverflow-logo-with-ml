@@ -47,4 +47,4 @@ I awarding a small bounty amount of hard-earned reputation on whoever can answer
  3. (Optional) Is a FFNN even capable of achieving good results on complex images? Is there an architecture that would be better suited for this kind of problem? If so, can you provide an example?
 
  - Artificial Neural Network library used: [Synaptic.js](https://caza.la/synaptic/)
- - To run this example in your localhost: [Get repo](https://github.com/adelriosantiago/paint-stackoverflow-logo-with-ml).
+ - To run this example in your localhost: [Clone repo](https://github.com/adelriosantiago/paint-stackoverflow-logo-with-ml).
