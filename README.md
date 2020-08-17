@@ -10,12 +10,19 @@ StackOverflow question: [link]
 
 ---
 
-# How to Feedforward Neural Network drawing accuracy?
+# How to improve drawing accuracy of this Feedforward Neural Network (FFNN)?
 
 I have this simple Feedforward Neural Network architecture:
 
 ![](./architecture.jpg)
 
+With 2 inputs, 15 hidden layers and 3 outputs.
+
+And I want it to learn how to draw this StackOverflow's logo:
+
+![](./so.bmp)
+
+This logo is 125 width by 125 height BMP at 255 colors for simplicity.
 
 
 
