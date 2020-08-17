@@ -12,7 +12,13 @@ StackOverflow question: [link]
 
 # How to improve drawing accuracy of this Feedforward Neural Network (FFNN)?
 
-And I want it to learn how to draw this StackOverflow's logo:
+I have this simple Feedforward Neural Network architecture:
+
+![](./architecture.jpg)
+
+This FFNN has 2 inputs, 15 hidden layers and 3 outputs.
+
+I want to train  learn how to draw StackOverflow's logo:
 
 ![](./so.bmp)
 
