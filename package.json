@@ -1,0 +1,14 @@
+{
+  "name": "paint-stackoverflow-logo-with-ml",
+  "version": "1.0.0",
+  "description": "To run in localhost:",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "author": "Alejandro del Río Santiago <adelriosantiago@gmail.com> (http://www.adelriosantiago.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

@@ -3,24 +3,28 @@
   <head>
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+    <style>
+      .thumbnail {
+        border: 1px solid gray;
+      }
+    </style>
   </head>
   <body>
     <div>
-      <p class="text-center"><small>Original:</small></p>
-      <div class="thumbnail">
-        <img id="input" src="./so.bmp" />
-      </div>
-      <button onclick="train()">train and paint</button>
-      <p class="text-center"><small>Painted by neural network:</small></p>
-      <div class="thumbnail">
-        <canvas id="output" width="125" height="125"></canvas>
-      </div>
+      <p>Original:</p>
+      <img id="input" class="thumbnail" src="./so.bmp" />
+      <br /><br />
+      <button onclick="startTraining(this)">train and paint</button>
+      <p>Painted by neural network:</p>
+      <canvas id="output" class="thumbnail" width="125" height="125"></canvas>
+      <p>Iteration: <span id="iteration">0</span></p>
     </div>
 
     <script>
       const width = 125
       const height = 125
       const outputCtx = document.getElementById("output").getContext("2d")
+      const iterationLabel = document.getElementById("iteration")
       let perceptron = new synaptic.Architect.Perceptron(2, 15, 3)
       let iteration = 0
 
@@ -46,7 +50,7 @@
             imageData.data[(height * y + x) * 4] = rgb[0] * 255
             imageData.data[(height * y + x) * 4 + 1] = rgb[1] * 255
             imageData.data[(height * y + x) * 4 + 2] = rgb[2] * 255
-            imageData.data[(height * y + x) * 4 + 3] = 255 // Alpha channel
+            imageData.data[(height * y + x) * 4 + 3] = 255 // Alpha not used
           }
         }
         outputCtx.putImageData(imageData, 0, 0)
@@ -55,8 +59,7 @@
       }
 
       const train = () => {
-        iteration++
-        console.log("training iteration", iteration)
+        iterationLabel.innerHTML = ++iteration
 
         for (let x = 0; x < width; x += 1) {
           for (let y = 0; y < height; y += 1) {
@@ -70,7 +73,10 @@
         paint()
       }
 
-      train()
+      const startTraining = (btn) => {
+        btn.disabled = true
+        train()
+      }
     </script>
   </body>
 </html>
