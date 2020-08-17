@@ -44,7 +44,7 @@ I awarding a small bounty amount of hard-earned reputation on whoever can answer
 
  1. How can I improve this FFNN drawing accuracy?
  2. Why the result I am getting is poor?
- 3. (Optional) Is there an architecture that would be better suited for this kind of problem? If so, can you provide an example?
+ 3. (Optional) Is a FFNN even capable of achieving good results on complex images? Is there an architecture that would be better suited for this kind of problem? If so, can you provide an example?
 
  - Library used: [Synaptic.js](https://caza.la/synaptic/)
  - This example in localhost [in this repo](https://github.com/adelriosantiago/paint-stackoverflow-logo-with-ml).
