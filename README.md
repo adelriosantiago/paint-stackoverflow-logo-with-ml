@@ -32,7 +32,7 @@ The result after several thousands epochs looks pretty well:
 
 [circle image]
 
-However StackOverflow's logo is far more complex and even after several thousands of iterations the FFNN's results are poor:
+However since StackOverflow's logo is far more complex and even after several thousands of iterations the FFNN's results are poor:
 
 [hidden snippet]
 
