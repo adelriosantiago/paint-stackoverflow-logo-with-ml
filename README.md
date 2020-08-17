@@ -10,7 +10,7 @@ StackOverflow question: [link]
 
 ---
 
-# How to improve accuracy of this Feedforward Neural Network (FFNN)?
+# How to improve accuracy of a Feedforward Neural Network (FFNN)?
 
 I have this simple Feedforward Neural Network architecture:
 
