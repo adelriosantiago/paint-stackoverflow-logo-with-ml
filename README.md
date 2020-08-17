@@ -40,6 +40,8 @@ The best results I have obtained so far are:
 
 [result grid]
 
+ - The NN never seems to lear to draw the bucket handles
+
 I awarding a small bounty amount of hard-earned reputation on whoever can answer:
 
  1. How can I improve this FFNN drawing accuracy?
