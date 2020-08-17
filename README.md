@@ -28,7 +28,7 @@ I am placing some hard-earned bounty on whoever can:
 
  1. Improve drawing result of this FFNN.
  2. Explain why the result I was getting was poor.
- 3. (Optional) Suggest a different architecture apporoach.
+ 3. (Optional) Suggest a different architecture approach.
 
 
 
