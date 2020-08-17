@@ -46,10 +46,5 @@ I awarding a small bounty amount of hard-earned reputation on whoever can answer
  2. Why the result I am getting is poor?
  3. (Optional) Is there an architecture that would be better suited for this kind of problem?
 
-
-
- - Librarie used: [Synaptic.js](https://caza.la/synaptic/)
+ - Library used: [Synaptic.js](https://caza.la/synaptic/)
  - This example in localhost [in this repo](https://github.com/adelriosantiago/paint-stackoverflow-logo-with-ml).
-
-
-### Can a feedforward neural network achieve this result? If not, why? If yes, how?\*\*
