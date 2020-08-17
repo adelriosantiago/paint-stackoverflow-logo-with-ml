@@ -24,11 +24,13 @@ And I want it to learn how to draw StackOverflow's logo:
 
 For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
-I am placing some hard-earned bounty on whoever can:
+I awarding a small bounty amount of hard-earned reputation on whoever can:
 
  1. Improve drawing result of this FFNN.
  2. Explain why the result I was getting was poor.
  3. (Optional) Suggest a different architecture approach.
+
+
 
 
 
