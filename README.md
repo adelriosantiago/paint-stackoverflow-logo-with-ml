@@ -26,11 +26,9 @@ For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
 I awarding a small bounty amount of hard-earned reputation on whoever can answer:
 
- 1. How to improve drawing accuracy of this Feedforward Neural Network (FFNN)?
- 2. Explain why the result I was getting was poor.
- 3. (Optional) Suggest a different architecture approach.
-
-
+ 1. How can I improve this FFNN drawing accuracy?
+ 2. Why the result I was getting was poor?
+ 3. (Optional) Is there an architecture that would be better suited for this kind of problem?
 
 
 
