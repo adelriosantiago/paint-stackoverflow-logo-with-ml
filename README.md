@@ -30,15 +30,18 @@ The FFNN works pretty well for simple shapes like a circle or a box.
 
 And the result after several thousands epochs looks pretty well:
 
-However StackOverflow's logo is far more complex and even after several thousands of iterations the FFNN's results are poort:
+However StackOverflow's logo is far more complex and even after several thousands of iterations the FFNN's results are poor:
 
-[]
+[hidden snippet]
+
+The best results I have obtained so far are:
+
 
 
 I awarding a small bounty amount of hard-earned reputation on whoever can answer:
 
  1. How can I improve this FFNN drawing accuracy?
- 2. Why the result I was getting was poor?
+ 2. Why the result I am getting is poor?
  3. (Optional) Is there an architecture that would be better suited for this kind of problem?
 
 
