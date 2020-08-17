@@ -28,7 +28,7 @@ First of all. The FFNN works pretty well for simple shapes like a circle or a bo
 
 [hidden snippet]
 
-And the result after several thousands epochs looks pretty well:
+The result after several thousands epochs looks pretty well:
 
 [circle image]
 
