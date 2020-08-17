@@ -16,13 +16,15 @@ I have this simple Feedforward Neural Network architecture:
 
 ![](./architecture.jpg)
 
-This FFNN has 2 inputs, 15 hidden layers and 3 outputs.
+For simplicity, this FFNN has 2 inputs, 15 hidden layers and 3 outputs.
 
-I want to train  learn how to draw StackOverflow's logo:
+And I want it to learn how to draw StackOverflow's logo:
 
 ![](./so.bmp)
 
-This logo is 125 width by 125 height BMP at 255 colors for simplicity.
+For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
+
+asdf
 
 
 
