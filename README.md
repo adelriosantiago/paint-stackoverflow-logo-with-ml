@@ -24,8 +24,6 @@ To do so I have this created this simple Feedforward Neural Network architecture
 
 For simplicity, this FFNN has 2 inputs, 15 hidden layers and 3 outputs. The two inputs are are the X, Y coordinates of the image. The three outputs are the RGB colors of the original image.
 
-And I want it to learn how to draw StackOverflow's logo:
-
 
 
 The FFNN works pretty well for simple shapes like a circle or a box.
