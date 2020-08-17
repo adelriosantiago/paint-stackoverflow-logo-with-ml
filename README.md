@@ -24,7 +24,15 @@ And I want it to learn how to draw StackOverflow's logo:
 
 For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
-The FFNN works pretty well for simple shapes like a circle:
+The FFNN works pretty well for simple shapes like a circle or a box.
+
+[hidden snippet]
+
+And the result after several thousands epochs looks pretty well:
+
+However StackOverflow's logo is far more complex and even after several thousands of iterations the FFNN's results are poort:
+
+[]
 
 
 I awarding a small bounty amount of hard-earned reputation on whoever can answer:
