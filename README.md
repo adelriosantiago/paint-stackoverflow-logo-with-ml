@@ -24,7 +24,6 @@ And I want it to learn how to draw StackOverflow's logo:
 
 For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
-asdf
 
 
 
