@@ -38,8 +38,6 @@ However since StackOverflow's logo is far more complex even after several thousa
 
 The best results I have obtained so far are:
 
-
-
 [result grid]
 
 I awarding a small bounty amount of hard-earned reputation on whoever can answer:
