@@ -11,15 +11,11 @@
   </head>
   <body>
     <div>
-      <p>Original:</p>
+      <button onclick="startTraining(this)">Paint with NN</button><br /><br />
       <img id="input" class="thumbnail" src="./so.bmp" />
-      <br /><br />
-      <button onclick="startTraining(this)">train and paint</button>
-      <p>Painted by neural network:</p>
       <canvas id="output" class="thumbnail" width="125" height="125"></canvas>
       <p>Iteration: <span id="iteration">0</span></p>
     </div>
-
     <script>
       const width = 125
       const height = 125
@@ -66,8 +62,8 @@
 
         for (let x = 0; x < width; x += 1) {
           for (let y = 0; y < height; y += 1) {
-            //let learningRate = 0.01 / (1 + 0.0005 * iteration) // Attempt with dynamic learning rate
-            let learningRate = 0.01 // Attempt with non-dinamyc learning rate
+            let learningRate = 0.01 / (1 + 0.0005 * iteration) // Attempt with dynamic learning rate
+            //let learningRate = 0.01 // Attempt with non-dinamyc learning rate
 
             perceptron.activate([x / width, y / height])
             perceptron.propagate(learningRate, getRGB(inputData, x, y))

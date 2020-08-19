@@ -18,36 +18,36 @@ I want to train a Neural Network to draw StackOverflow's logo:
 
 For simplicity, this logo is 125 width by 125 height BMP at 255 colors.
 
-To do so I have this created this simple Feedforward Neural Network architecture:
+To do so, I have this created this simple Feedforward Neural Network architecture:
 
 ![](./architecture.jpg)
 
-For simplicity, this FFNN has 2 inputs, 15 hidden layers and 3 outputs. The two inputs are are the X, Y coordinates of the image. The three outputs are the RGB colors of the original image.
+This FFNN has 2 inputs, 15 hidden layers and 3 outputs. Inputs are the X, Y coordinates of a pixel. The three outputs are the RGB colors of that pixel.
 
-First of all. The FFNN works pretty well for simple shapes like a circle or a box.
+The NN should ideally become *[r, g, b] = f([x, y])*. In other words, it should return RGB colors for a given pair of coordinates. The FFNN works pretty well for simple shapes like a circle or a box. The result after several thousands epochs looks pretty well:
 
-[hidden snippet]
+![](./circle-result.jpg)
 
-The result after several thousands epochs looks pretty well:
+Try it yourself:
 
-[circle image]
+[snippet]
 
 However since StackOverflow's logo is far more complex even after several thousands of iterations the FFNN's results are somewhat poor:
 
-[hidden snippet]
+![](./so-result.jpg)
 
-The best results I have obtained so far are:
+Try it yourself: [snippet]
 
-[result grid]
+From left to right:
 
- - The NN never seems to learn to draw the left bucket handle.
- - Edges look blurry.
+ 1. With 15 hidden neurons: The left handle never appears.
+ 2. 50 hidden neurons: Pretty poor result in general.
+ 3. 0.03 as learning rate: Shows blue in the results (blue is not in the orignal image)
+ 4. A time-decreasing learning rate: The left handle appears but other details are now lost.
 
-I awarding a small bounty amount of hard-earned reputation on whoever can answer:
+The question is: **In general, how can I improve the accuracy of a FFNN?**
 
- 1. How can I improve this FFNN drawing accuracy?
- 2. Why the result I am getting is poor?
- 3. (Optional) Is a FFNN even capable of achieving good results on complex images? Is there an architecture that would be better suited for this kind of problem? If so, can you provide an example?
+Could you modify the snippet with better results? Is a FFNN even capable of achieving good drawing results? If there is a better NN architeture could you provide an example?
 
  - Artificial Neural Network library used: [Synaptic.js](https://caza.la/synaptic/)
  - To run this example in your localhost: [See repository](https://github.com/adelriosantiago/paint-stackoverflow-logo-with-ml)
